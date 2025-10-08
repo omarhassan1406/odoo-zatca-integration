@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_invoice_form_zatca" model="ir.ui.view">
+        <field name="name">account.move.form.zatca</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+
+            <!-- نضيف الزر في التولبار فوق -->
+            <xpath expr="//header" position="inside">
+                <button name="action_zatca_send"
+                        type="object"
+                        string="Send to ZATCA"
+                        class="btn-primary"/>
+            </xpath>
+
+            <!-- نعرض حالة ZATCA داخل التاب الرئيسي -->
+            <xpath expr="//sheet/notebook" position="inside">
+                <page string="ZATCA E-Invoice" name="zatca_tab">
+                    <group>
+                        <field name="zatca_status" readonly="1"/>
+                        <field name="zatca_uuid" readonly="1"/>
+                    </group>
+                    <group>
+                        <field name="zatca_qr" widget="image" readonly="1" class="oe_avatar"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
