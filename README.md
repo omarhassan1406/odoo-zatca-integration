@@ -71,6 +71,6 @@ This module is licensed under the MIT License.
 
 ## Contact
 
-Developed by [Your Name](https://github.com/USERNAME)
+Developed by [Omar Hassan](https://github.com/omarhassan1406)
 
 ---
