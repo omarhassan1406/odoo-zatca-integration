@@ -17,10 +17,10 @@
 ## Screenshots
 
 ### ZATCA Integration Settings
-![Settings](screenshots/odoo_settings_zatca.png)
+![Settings](screenshots/odoo_setting_zatca.png)
 
 ### Invoice Form with ZATCA Tab
-![Invoice Form](screenshots/invoice_form_zatca.png)
+![Invoice Form](screenshots/invice_form_zatca.png)
 
 ### Invoice ZATCA Tab (Status, UUID, QR Code)
 ![ZATCA Tab](screenshots/invoice_zatca_tab.png)
